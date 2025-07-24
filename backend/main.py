@@ -40,8 +40,8 @@ rbac_manager = RBACManager(security_manager)
 anomaly_detector = AnomalyDetector()
 
 # Get environment variables for production
-cors_origins = os.getenv('CORS_ORIGINS', 'https://fraudshield-frontend2.onrender.com,https://fraudshield-backend2.onrender.com,http://localhost:3000').split(',')
-trusted_hosts = os.getenv('TRUSTED_HOSTS', 'fraudshield-frontend2.onrender.com,fraudshield-backend2.onrender.com,localhost,127.0.0.1').split(',')
+cors_origins = os.getenv('CORS_ORIGINS', 'https://fraud-frontend.onrender.com,https://fraud-shield-fjos.onrender.com,http://localhost:3000').split(',')
+trusted_hosts = os.getenv('TRUSTED_HOSTS', 'fraud-frontend.onrender.com,fraud-shield-fjos.onrender.com,localhost,127.0.0.1').split(',')
 
 # Security Middleware
 app.add_middleware(
